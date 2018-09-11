@@ -19,7 +19,7 @@ export default class App extends React.Component {
       );
     } else {
       return (
-        <View style={styles.container}>
+        <View style={styles.image_container}>
           {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
           <AppNavigator />
         </View>
@@ -55,7 +55,7 @@ export default class App extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  image_container: {
     flex: 1,
     backgroundColor: '#fff',
   },
