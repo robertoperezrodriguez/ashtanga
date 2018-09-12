@@ -8,6 +8,28 @@ import {
     TouchableOpacity,
     View,
 } from 'react-native';
+import {Dimensions} from "react-native";
+
+var width = Dimensions.get('window').width; //full width
+var height = Dimensions.get('window').height; //full height
+var image_original_height = 226;
+var image_original_width = 640;
+var reduction_ratio = width / image_original_width;
+var image_reducted_height = reduction_ratio * image_original_height;
+
+var header_original_height = 130;
+var header_original_width = 640;
+var reduction_ratio = width / header_original_width;
+var header_reducted_height = reduction_ratio * header_original_height;
+
+console.log("image_original_width: " + image_original_width);
+console.log("screen width: " + width);
+console.log("reduction ratio:" + reduction_ratio);
+console.log("image original_height: " + image_original_height);
+console.log("image reduced height: " + image_reducted_height);
+console.log("header_reducted_height: " + header_reducted_height)
+
+
 import {WebBrowser} from 'expo';
 
 import {MonoText} from '../components/StyledText';
@@ -19,34 +41,30 @@ export default class HomeScreen extends React.Component {
 
     render() {
         return (
-            <View style={{flex: 1}}>
-                // Header
+            <View>
                 <View style={styles.header}>
-                    <Image source={require('../assets/images/search_bar.png')} resizeMode="cover"/>
+                    <Image style={styles.image} source={require('../assets/images/search_background.png')} resizeMode={Image.resizeMode.contain}/>
                 </View>
-                // Images list
-                <ScrollView>
-                    // About Ashtanga
-                    <View style={styles.image_separator}/>
-                    <View style={styles.image_container}>
-                        <Image source={require('../assets/images/about_ashtanga.png')} resizeMode="cover"/>
-                    </View>
-                    <View style={styles.image_separator}/>
-                    // Inspirations
-                    <View style={styles.image_container}>
-                        <Image source={require('../assets/images/inspirations.png')} resizeMode="cover"/>
-                    </View>
-                    <View style={styles.image_separator}/>
-                    // Asanas
-                    <View style={styles.image_container}>
-                        <Image source={require('../assets/images/asanas.png')} resizeMode="cover"/>
-                    </View>
-                    <View style={styles.image_separator}/>
-                    // Lifestyle
-                    <View style={styles.image_container}>
-                        <Image source={require('../assets/images/lifestyle.png')} resizeMode="cover"/>
-                    </View>
-                </ScrollView>
+                <View style={styles.image_separator}/>
+                <View style={styles.image_container}>
+                    <Image style={styles.image} source={require('../assets/images/asthanga.png')}
+                           resizeMode={Image.resizeMode.contain}/>
+                </View>
+                <View style={styles.image_separator}/>
+                <View style={styles.image_container}>
+                    <Image style={styles.image} source={require('../assets/images/inspirations.png')}
+                           resizeMode={Image.resizeMode.contain}/>
+                </View>
+                <View style={styles.image_separator}/>
+                <View style={styles.image_container}>
+                    <Image style={styles.image} source={require('../assets/images/asanas.png')}
+                           resizeMode={Image.resizeMode.contain}/>
+                </View>
+                <View style={styles.image_separator}/>
+                <View style={styles.image_container}>
+                    <Image style={styles.image} source={require('../assets/images/lifestyle.png')}
+                           resizeMode={Image.resizeMode.contain}/>
+                </View>
 
             </View>
 
@@ -57,18 +75,19 @@ export default class HomeScreen extends React.Component {
 
 const styles = StyleSheet.create({
     header: {
-        height: 65,
-        backgroundColor: 'red',
+        width: width,
+        height: header_reducted_height,
     },
     image_list: {
-        flex: 1,
-        height: 500,
+
+
+        height: 700,
         alignItems: 'center',
     },
     image_container: {
-        flex: 1,
-        backgroundColor: 'green',
-        height: 113,
+        backgroundColor: 'red',
+        width: width,
+        height: image_reducted_height,
     },
     image: {
         flex: 1,
@@ -76,7 +95,7 @@ const styles = StyleSheet.create({
         height: undefined,
     },
     image_separator: {
-        flex: 1,
+        width: width,
         height: 4,
     },
 });
