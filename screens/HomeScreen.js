@@ -1,6 +1,7 @@
 import React from 'react';
 import {
     Image,
+    ImageBackground,
     Platform,
     ScrollView,
     StyleSheet,
@@ -43,27 +44,44 @@ export default class HomeScreen extends React.Component {
         return (
             <View>
                 <View style={styles.header}>
-                    <Image style={styles.image} source={require('../assets/images/search_background.png')} resizeMode={Image.resizeMode.contain}/>
+                    <ImageBackground style={styles.image} source={require('../assets/images/search_background.png')} resizeMode={Image.resizeMode.contain}>
+                    </ImageBackground>
                 </View>
                 <View style={styles.image_separator}/>
                 <View style={styles.image_container}>
-                    <Image style={styles.image} source={require('../assets/images/asthanga.png')}
-                           resizeMode={Image.resizeMode.contain}/>
+                    <ImageBackground style={styles.image} source={require('../assets/images/asthanga.png')}
+                           resizeMode={Image.resizeMode.contain}>
+                        <View style={styles.text_over_image_container}>
+                            <Text style={styles.text_over_image}>Sobre Ashtanga</Text>
+                        </View>
+                    </ImageBackground>
                 </View>
                 <View style={styles.image_separator}/>
                 <View style={styles.image_container}>
-                    <Image style={styles.image} source={require('../assets/images/inspirations.png')}
-                           resizeMode={Image.resizeMode.contain}/>
+                    <ImageBackground style={styles.image} source={require('../assets/images/inspirations.png')}
+                                     resizeMode={Image.resizeMode.contain}>
+                        <View style={styles.text_over_image_container}>
+                            <Text style={styles.text_over_image}>Inspiraciones</Text>
+                        </View>
+                    </ImageBackground>
                 </View>
                 <View style={styles.image_separator}/>
                 <View style={styles.image_container}>
-                    <Image style={styles.image} source={require('../assets/images/asanas.png')}
-                           resizeMode={Image.resizeMode.contain}/>
+                    <ImageBackground style={styles.image} source={require('../assets/images/asanas.png')}
+                                     resizeMode={Image.resizeMode.contain}>
+                        <View style={styles.text_over_image_container}>
+                            <Text style={styles.text_over_image}>Asanas</Text>
+                        </View>
+                    </ImageBackground>
                 </View>
                 <View style={styles.image_separator}/>
                 <View style={styles.image_container}>
-                    <Image style={styles.image} source={require('../assets/images/lifestyle.png')}
-                           resizeMode={Image.resizeMode.contain}/>
+                    <ImageBackground style={styles.image} source={require('../assets/images/lifestyle.png')}
+                                     resizeMode={Image.resizeMode.contain}>
+                        <View style={styles.text_over_image_container}>
+                            <Text style={styles.text_over_image}>Estilo de vida</Text>
+                        </View>
+                    </ImageBackground>
                 </View>
 
             </View>
@@ -79,8 +97,6 @@ const styles = StyleSheet.create({
         height: header_reducted_height,
     },
     image_list: {
-
-
         height: 700,
         alignItems: 'center',
     },
@@ -98,4 +114,14 @@ const styles = StyleSheet.create({
         width: width,
         height: 4,
     },
+    text_over_image_container: {
+        position: 'absolute',
+        bottom: 13,
+        left: 19,
+    },
+    text_over_image: {
+        fontSize: 22,
+        fontFamily: 'Avenir-Medium',
+        color: 'white',
+    }
 });

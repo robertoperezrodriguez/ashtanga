@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="518ff8b8-de1e-4aed-ab6f-d8ecac964f97" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/asthanga.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/search_background.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/about_ashtanga.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/search_bar.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/asanas.png" afterPath="$PROJECT_DIR$/assets/images/asanas.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/inspirations.png" afterPath="$PROJECT_DIR$/assets/images/inspirations.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/lifestyle.png" afterPath="$PROJECT_DIR$/assets/images/lifestyle.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screens/HomeScreen.js" afterPath="$PROJECT_DIR$/screens/HomeScreen.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,11 +49,11 @@
       <file leaf-file-name="HomeScreen.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="538">
+              <caret line="81" column="79" lean-forward="false" selection-start-line="81" selection-start-column="79" selection-end-line="81" selection-end-column="79" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#1042#1074#0" expanded="true" />
+                <element signature="e#1063#1095#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -313,12 +305,12 @@
       <workItem from="1536598728412" duration="17198000" />
       <workItem from="1536677695683" duration="756000" />
       <workItem from="1536741411540" duration="11000" />
-      <workItem from="1536755190064" duration="9245000" />
+      <workItem from="1536755190064" duration="11135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28880000" />
+    <option name="totallyTimeSpent" value="30770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1620" height="920" extended-state="0" />
@@ -417,7 +409,7 @@
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#1042#1074#0" expanded="true" />
+            <element signature="e#1063#1095#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -474,7 +466,7 @@
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#1042#1074#0" expanded="true" />
+            <element signature="e#1063#1095#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -531,7 +523,7 @@
           <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#1042#1074#0" expanded="true" />
+            <element signature="e#1063#1095#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,7 +547,7 @@
           <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#1042#1074#0" expanded="true" />
+            <element signature="e#1063#1095#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -625,11 +617,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="538">
+          <caret line="81" column="79" lean-forward="false" selection-start-line="81" selection-start-column="79" selection-end-line="81" selection-end-column="79" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#1042#1074#0" expanded="true" />
+            <element signature="e#1063#1095#0" expanded="true" />
           </folding>
         </state>
       </provider>
